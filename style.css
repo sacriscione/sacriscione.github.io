@@ -1,0 +1,51 @@
+nav {
+    --#{$prefix}navbar-color: #{$navbar-dark-color};
+    --#{$prefix}navbar-hover-color: #{$navbar-dark-hover-color};
+    --#{$prefix}navbar-disabled-color: #{$navbar-dark-disabled-color};
+    --#{$prefix}navbar-active-color: #{$navbar-dark-active-color};
+    --#{$prefix}navbar-brand-color: #{$navbar-dark-brand-color};
+    --#{$prefix}navbar-brand-hover-color: #{$navbar-dark-brand-hover-color};
+    --#{$prefix}navbar-toggler-border-color: #{$navbar-dark-toggler-border-color};
+    --#{$prefix}navbar-toggler-icon-bg: #{escape-svg($navbar-dark-toggler-icon-bg)};
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+}
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+.contact-item {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.contact-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.contact-item h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+.contact-item p {
+    margin: 0;
+}
